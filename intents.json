@@ -1,0 +1,155 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hello",
+        "Hi",
+        "Hey"
+
+      ],
+      "responses": [
+        "Hi there, we are Microsoft Solution Partner for Data and AI and we welcome to the Farmer's Assistance Chatbot! How can I help you today?"
+
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "irrigation techniques",
+      "patterns": [
+
+        "What are some effective irrigation techniques?",
+        "Know about irrigation techniques",
+        "irrigation techniques"
+
+      ],
+      "responses":
+      [
+
+        "Irrigation plays a vital role in crop production. Here are some techniques you can consider:\n1. Drip irrigation: Delivers water directly to plant roots, minimizing wastage.\n    2. Sprinkler irrigation: Sprays water over the crop area, suitable for a variety of crops.\n     3. Furrow irrigation: Uses channels to direct water between crop rows.\n       4. Use weather-based irrigation controllers to optimize water usage.\n      5. Avoid over-irrigation to prevent waterlogging and nutrient leaching."
+      ]
+    },
+
+    {
+      "tag": "pest damage",
+      "patterns": [
+        "How can I reduce pest damage in my orchard without excessive pesticide use?",
+        "How can I reduce pest damage?",
+        "know to reduce pest damage"
+      ],
+      "responses": [
+
+        "Integrated pest management (IPM) practices can help minimize pest damage. Consider these strategies:\n1. Regular scouting and monitoring: Inspect your orchard frequently to identify pest populations and take appropriate action.\n2. Biological control: Encourage natural predators like ladybugs or use beneficial insects to control pests.\n3. Trap crops: Plant specific crops that attract pests away from the main orchard.\n4. Physical barriers: Use netting or screens to prevent pest access to the orchard.\n5. Cultural practices: Implement techniques such as pruning, proper sanitation, and crop rotation to disrupt pest life cycles."
+      ]
+    },
+    {
+      "tag": "agriculture technology",
+      "patterns": [
+        "What are some advancements in agricultural technology that can benefit my farm?",
+        "agriculture technology ?",
+        "know about agriculture technology that can benefit my farm?"
+      ],
+      "responses": [
+
+        "Agricultural technology has made significant progress. Here are some advancements:\n1. Precision farming: Utilize tools like GPS, sensors, and drones for precise planting, irrigation, and fertilization.\n2. Automated machinery: Use automated equipment for tasks like planting, harvesting, and milking, increasing efficiency and reducing labor needs.\n3. Crop monitoring systems: Employ remote sensing and satellite imagery to monitor crop health, detect diseases, and optimize resource allocation.\n4. Data-driven decision making: Analyze farm data to make informed decisions regarding crop selection, fertilizer application, and yield optimization.\n5. Smart irrigation systems: Install automated irrigation systems that adjust water usage based on weather conditions, soil moisture, and crop needs."
+      ]
+    },
+    {
+      "tag": "cultivation",
+      "patterns": [
+        "I'm planning to cultivate tomatoes this season. What are the ideal growing conditions?\n",
+        "want to cultivate tomatoes?",
+        "planning to cultivate tomatoes this season?"
+      ],
+      "responses": [
+
+        "Tomatoes thrive under specific conditions. Here's what you need to know:\n 1. Optimal temperature: Tomatoes prefer temperatures between 70°F and 85°F (21°C to 29°C).\n  2. Sunlight: They require full sun exposure for at least 6-8 hours a day.\n    3. Soil requirements: Well-drained soil with a pH range of 6.0 to 6.8 is ideal.\n   4. Watering: Maintain consistent soil moisture, avoiding overwatering or underwatering.\n  5. Fertilization: Use a balanced fertilizer with a higher phosphorus content for fruit development."
+      ]
+    },
+    {
+      "tag": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+      "patterns": [
+        "I want to know about Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+        "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+        "can you please explain about Pradhan Mantri Fasal Bima Yojana (PMFBY)?"
+      ],
+      "responses": [
+        "This crop insurance scheme provides coverage to farmers against crop loss or damage due to natural calamities, pests, and diseases."
+
+      ]
+    },
+    {
+      "tag": " Eligible for Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+      "patterns": [
+        "Who all are eligible for register to Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+        "eligibility for Pradhan Mantri Fasal Bima Yojana (PMFBY)"
+
+      ],
+      "responses": [
+        "1.All farmers:\n\nPMFBY is applicable to all farmers, including small, marginal, and large farmers.\n   Both loanee and non-loanee farmers are eligible for the scheme.\n2.  Crop coverage:\n\nPMFBY provides coverage for a wide range of crops, including food crops (cereals, pulses), oilseeds, commercial crops, horticultural crops, and annual commercial/horticultural crops.\nThe specific crops covered may vary from state to state based on cropping patterns and risk profiles.\n"
+
+      ]
+    },
+    {
+      "tag": "Required Documents",
+      "patterns": [
+        "What all documents are required for register Pradhan Mantri Fasal Bima Yojana (PMFBY) ",
+        "documents required for register Pradhan Mantri Fasal Bima Yojana (PMFBY)?"
+      ],
+      "responses": [
+        "1.Aadhaar card (or any other government-issued photo ID)\n  2.Land ownership records or documents indicating farmer status"
+      ]
+    },
+    {
+      "tag": "PM-KISAN Yojana",
+      "patterns": [
+        "I want to know about PM-KISAN Yojana",
+        "PM-KISAN Yojana",
+        "can you please explain about PM-KISAN Yojana?"
+      ],
+      "responses": [
+        "The primary objective of PM-KISAN is to supplement the financial needs of small and marginal farmers for procuring inputs, meeting expenses related to agricultural activities, and ensuring a steady income flow.  \nIt aims to provide income support to eligible farmers and improve their overall livelihood."
+
+      ]
+    },
+    {
+      "tag": "Eligibility",
+      "patterns": [
+        "Who all are eligible for register to PM-KISAN Yojana",
+
+        "Eligibility for PM-KISAN Yojana?"
+      ],
+      "responses": [
+        "1. All small and marginal farmers' families who are part of the defined landholding criteria are eligible for the scheme.  \n2. The eligibility criteria and landholding limits are set by the government and may vary across states."
+
+      ]
+    },
+    {
+      "tag": "Enrollment and Registration",
+      "patterns": [
+        "process to  register to PM-KISAN Yojana",
+
+        "what is the process to register PM-KISAN Yojana?"
+      ],
+      "responses": [
+        "1. Farmers can enroll for the scheme through the Common Service Centers (CSCs) or by visiting the PM-KISAN official website.\n      2. During enrollment, farmers need to provide their personal and landholding details, along with their Aadhaar number or any other valid identification documents."
+
+      ]
+    }
+
+
+  ]
+}

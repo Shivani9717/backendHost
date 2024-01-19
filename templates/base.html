@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <style>
+        body {
+            background-image: url('{{ url_for('static', filename='images/background.png') }}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+<!--        .Old_Age {-->
+<!--            background-image: url('{{ url_for('static', filename='images/Old age Pension.jpg') }}');-->
+<!--        }-->
+
+<!--        .Old_Age {-->
+<!--            background-image: url('http://127.0.0.1:5000/static/images/Old%20age%20Pension.jpg');-->
+<!--            background-repeat: no-repeat;-->
+<!--            background-position: center;-->
+<!--            width: 400px;-->
+<!--            height: 400px;-->
+
+<!--        }-->
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="home-icon" onclick="navigateHome(this)">
+                    <!-- SVG home icon -->
+                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 20H5V12H2L12 3L22 12H19V20H14V14H10V20Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="ham-container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png"
+                         alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Government Of Punjab</h4>
+                    <p class="chatbox__description--header">Hi, How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages" >
+                <div id="popup" class="grid-container" >
+                    <div class="grid-item">Manish</div>
+                    <div class="grid-item">kumar</div>
+                    </div>
+                </div>
+                <div class="chatbox__footer" id="footer">
+                    <div class="chatbox__input__send">
+                        <input type="text" placeholder="Write a message...">
+                        <button class="chatbox__send--footer send__button">Send</button>
+                    </div>
+                    <div style="text-align: center;"><span class="company_info">Powered by <a
+                            href="https://glorinz.com/">Glorious Insight</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button><img src="{{ url_for('static', filename='images/chatbot-icon.png') }}"
+                             style="width: 80px; height: 80px"/></button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+
+    </script>
+
+    <script>
+        function navigateHome(x) {
+             // Add your navigation logic here
+             var chatboxSupport = document.querySelector('.chatbox__support');
+             chatboxSupport.classList.remove('chatbox--active');
+         }
+         function myFunction(x) {
+           x.classList.toggle("change");
+           var popupDiv = document.getElementById("popup");
+           var footerDiv = document.getElementById("footer");
+             if (popupDiv.style.display === "grid") {
+                         popupDiv.style.display = "none"; // Show the div
+                         footerDiv.style.display = "none"; // Show the div
+                     } else {
+                         popupDiv.style.display = "grid";  // Hide the
+                         footerDiv.style.display = "block";
+                     }
+         }
+
+    </script>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+
+</body>
+
+</html>
+
